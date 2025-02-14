@@ -73,7 +73,29 @@ int main() {
             factorial *= i;
         }
         cout << "Factorial de " << n << " = " << factorial;
-    return 0;
+
     }
 
+    cout << endl;
+    cout << "Ingresar el numero para la serie de Fibonacci";
+    int m, t1 = 0, t2 = 1, nextTerm = 0;
+    cin >> m;
+
+    cout << "Serie de Fibonacci: ";
+    for (int i = 1; i <= m; i++) {
+        // Imprime los primeros dos terminos
+        if (i == 1) {
+            cout << t1;
+            continue;
+        }
+        if (i == 2) {
+            cout << ", " << t2;
+            continue;
+        }
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+        cout << ", " << nextTerm;
+    }
+    cout << endl;
 }
