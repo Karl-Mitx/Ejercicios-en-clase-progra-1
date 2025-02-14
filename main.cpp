@@ -116,4 +116,17 @@ int main() {
     if (a % 2 ==0) cout<<"El numero es par";
     else
         cout<<"Es un numero impar";
+    cout << endl;
+    cout << "Con un numero ingresado por el usuario mostrar la tabla de multiplicar";
+    cout << endl;
+    do {
+      cout<<"Ingrese un numero: ";
+        cin>>a;
+    }while ( (a<1) || (a>10) );
+    for (int x=1; x<=10;x++) {
+        cout<<a<< "  *  "<<x<<" = "<<a * x<<endl;
+    }
+
+
+
 }
