@@ -41538,8 +41538,24 @@ int main() {
     }
     cout << endl;
 
-        cout << "Tabla de multiplicar del 6" << endl;
-        for (int i=1; i<11; i++) {
-            cout << "6 * " << i << " = " <<6*i << endl;
+    cout << "Tabla de multiplicar del 6" << endl;
+    for (int i=1; i<11; i++) {
+        cout << "6 * " << i << " = " <<6*i << endl;
+    }
+    int n;
+    long long factorial = 1;
+
+    cout << "Ingrese un numero para calcular su factorial";
+    cin >> n;
+
+    if (n < 0)
+        cout << "Error, El numero factorial de un numero negativo no existe";
+    else {
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
         }
+        cout << "Factorial de " << n << " = " << factorial;
+    return 0;
+    }
+
 }
