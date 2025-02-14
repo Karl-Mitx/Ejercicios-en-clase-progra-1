@@ -41580,5 +41580,22 @@ int main() {
         cout << ", " << nextTerm;
     }
     cout << endl;
+    cout << "Ingrese un numero para saber si es numero primo";
+    int num;
+    cin >> num;
+    bool primo = true;
+    for (int i = 2 ;i < num ; i++) {
+        if (num % i == 0) primo = false;
+    }
+    if (primo ==true) cout<<"Es un numero primo";
+    else cout<<"No es un numero primo";
 
+    cout << endl;
+    cout << "Ingrese un numero para saber si es par o impar";
+    cout << endl;
+    cout << "Ingresa un numero: ";
+    cin >> a;
+    if (a % 2 ==0) cout<<"El numero es par";
+    else
+        cout<<"Es un numero impar";
 }
